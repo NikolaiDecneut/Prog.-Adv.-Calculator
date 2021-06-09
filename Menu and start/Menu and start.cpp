@@ -12,11 +12,11 @@ int main()
 	int equations;
 	// int  ;
 	// int  ;
-	printf("please select your type of equation\n");
+	printf("Please select your type of equation\n");
 	switch (equations)
 	{
 	case 1:
-		printf("the sales taxs in WA is 6.5% so what is the price of the item you would like to calculate?\n");
+		printf("The sales taxs in WA is 6.5% so what is the price of the item you would like to calculate?\n");
 		
 		scanf_s("%d", sales);
 		fseek(stdin, 0, SEEK_END);
@@ -27,5 +27,5 @@ int main()
 
 
 
-
+	return 0;
 }
