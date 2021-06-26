@@ -44,6 +44,10 @@ int main()
 			salesEnd = sales * salesTax;
 			printf("Your answer is: %d USD", salesEnd);
 		}
+		else if (city == 3)
+		{
+			printf("Seattle city tax is  which makes the tax  \n");
+		}
 		
 		break;
 	}
