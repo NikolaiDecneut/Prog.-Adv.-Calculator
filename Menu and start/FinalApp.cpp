@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include "admin.cpp"
 
 int main()
 {
@@ -48,7 +49,12 @@ int main()
 		{
 			printf("Seattle city tax is  which makes the tax  \n");
 		}
-		
+		else if (city == 411)
+		{
+#include "admin.cpp"
+			printf("hello, please enter password");
+			// password is adminControl
+		}
 		break;
 	}
 
