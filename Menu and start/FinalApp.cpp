@@ -1,6 +1,8 @@
 
 #include <iostream>
-#include "admin.cpp"
+
+#include <string>
+#include "admin.h"
 
 int main()
 {
@@ -51,9 +53,17 @@ int main()
 		}
 		else if (city == 411)
 		{
-#include "admin.cpp"
-			printf("hello, please enter password");
-			// password is adminControl
+			printf("hello, please enter password \n");
+			// password is password
+			
+			std::string pass;
+			scanf_s("%s", &pass);
+			fseek(stdin, 0, SEEK_END);
+			if(pass == "password")
+			{
+				instructions();	
+
+			}
 		}
 		break;
 	}
