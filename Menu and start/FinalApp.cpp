@@ -1,8 +1,9 @@
 
-#include <iostream>
+
 
 #include <string>
 #include "admin.h"
+#include <iostream>
 
 int main()
 {
@@ -55,14 +56,19 @@ int main()
 		{
 			printf("hello, please enter password \n");
 			// password is password
-			
-			std::string pass;
-			scanf_s("%s", &pass);
-			fseek(stdin, 0, SEEK_END);
-			if(pass == "password")
-			{
-				instructions();	
 
+			std::string pass;
+			getline(std::cin, pass);
+			fseek(stdin, 0, SEEK_END);
+			if (pass == "password")
+			{
+				instructions();
+			}
+			else if(pass != "password")
+			{
+				
+				printf("Incorrect password!");
+				switch (equations = true);
 			}
 		}
 		break;
