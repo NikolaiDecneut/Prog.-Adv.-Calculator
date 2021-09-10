@@ -5,6 +5,6 @@ void instructions();
 
 void instructions()
 {
-	printf("This is my first function.\n\n");
+	printf("Welcome to admin control center, here will be variable change, etc. Coming Soon!\n\n");
 	return;
 }
