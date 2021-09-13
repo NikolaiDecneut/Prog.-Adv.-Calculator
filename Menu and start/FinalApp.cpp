@@ -42,7 +42,7 @@ int main()
 		{
 			printf("Bellevue city tax is 3.6%% which makes it .036\n");
 			cityTax = .036;
-			printf("Please defy the price of the item you purchased\n");
+			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
 			salesEnd = sales * salesTax;
@@ -50,7 +50,13 @@ int main()
 		}
 		else if (city == 3)
 		{
-			printf("Seattle city tax is  which makes the tax  \n");
+			printf("Seattle city tax is 6.5% which makes the tax .065 \n");
+			cityTax = .065;
+			printf("Please defy the price of the item you purchased: \n");
+			scanf_s("%f", &sales);
+			fseek(stdin, 0, SEEK_END);
+			salesEnd = sales * salesTax;
+			printf("Your item price is: %d USD", salesEnd);
 		}
 		else if (city == 411)
 		{
