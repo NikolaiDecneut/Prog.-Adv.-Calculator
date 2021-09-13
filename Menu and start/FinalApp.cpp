@@ -15,7 +15,7 @@ int main()
 	float cityTax;
 	//int pythagTheorom;
 	int equations;
-	
+	//change ints to floats
 	printf("Please select your type of equation\n 1. Sales tax by city\n");
 	scanf_s("%d", &equations);
 	fseek(stdin, 0, SEEK_END);
@@ -24,7 +24,7 @@ int main()
 	case 1:
 		int city;
 		printf("The sales taxs in WA is 6.5%, but each city has it own taxes so please select your city first\n");
-		printf("1. Duvall\n2. Bellevue\n3.Seattle\n");
+		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane");
 		scanf_s("%d", &city);
 		fseek(stdin, 0, SEEK_END);
 		printf("%d\n", city);
@@ -58,7 +58,13 @@ int main()
 			salesEnd = sales * salesTax;
 			printf("Your item price is: %d USD", salesEnd);
 		}
-		else if (city == 411)
+		else if (city == 4)
+		{
+			printf("Spokane city tax is  which makes the tax  \n");
+		}
+
+
+		else if (city == 4311)
 		{
 			printf("hello, please enter password \n");
 			// password is admin101
