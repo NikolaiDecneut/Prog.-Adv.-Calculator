@@ -55,16 +55,16 @@ int main()
 		else if (city == 411)
 		{
 			printf("hello, please enter password \n");
-			// password is password
+			// password is admin101
 
 			std::string pass;
 			getline(std::cin, pass);
 			fseek(stdin, 0, SEEK_END);
-			if (pass == "password")
+			if (pass == "admin101")
 			{
 				instructions();
 			}
-			else if(pass != "password")
+			else if(pass != "admin101")
 			{
 				
 				printf("Incorrect password!");
