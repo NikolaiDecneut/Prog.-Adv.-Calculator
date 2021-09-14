@@ -23,7 +23,7 @@ int main()
 	{
 	case 1:
 		int city;
-		printf("The sales taxs in WA is 6.5%, but each city has it own taxes so please select your city first\n");
+		printf("The sales taxs in WA is 6.5%%, but each city has it own taxes so please select your city first\n");
 		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane");
 		scanf_s("%d", &city);
 		fseek(stdin, 0, SEEK_END);
