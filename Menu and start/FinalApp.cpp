@@ -10,7 +10,7 @@ int main()
 	// here will be the menu
 	printf("welcome to quick calc!\n");
 	float salesTax = .065;
-	int salesEnd;
+	float salesEnd;
 	float sales;
 	float cityTax;
 	//int pythagTheorom;
@@ -50,7 +50,7 @@ int main()
 		}
 		else if (city == 3)
 		{
-			printf("Seattle city tax is 6.5%% which makes the tax .065 \n");
+			printf("Seattle city tax is 6.5% which makes the tax .065 \n");
 			cityTax = .065;
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
@@ -60,7 +60,7 @@ int main()
 		}
 		else if (city == 4)
 		{
-			printf("Spokane city tax is  which makes the tax  \n");
+			printf("Spokane city tax is 9.0%% which makes the tax  \n");
 		}
 
 
