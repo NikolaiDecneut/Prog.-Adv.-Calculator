@@ -13,9 +13,11 @@ int main()
 	float salesEnd;
 	float sales;
 	float cityTax;
-	int pythag;
 	int equations;
-	
+
+	int pythag;
+	// make loop to revert after bad password
+
 	printf("Please select your type of equation\n 1. Sales tax by city\n");
 	scanf_s("%d", &equations);
 	fseek(stdin, 0, SEEK_END);
@@ -24,7 +26,7 @@ int main()
 	case 1:
 		int city;
 		printf("The sales taxs in WA is 6.5%%, but each city has it own taxes so please select your city first\n");
-		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane");
+		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane\n5.Olympia\n");
 		scanf_s("%d", &city);
 		fseek(stdin, 0, SEEK_END);
 		printf("%d\n", city);
@@ -37,6 +39,7 @@ int main()
 			fseek(stdin, 0, SEEK_END);
 			salesEnd = sales * salesTax;
 			printf("Your answer is: %d USD", salesEnd);
+			
 		}
 		else if (city == 2)
 		{
@@ -68,9 +71,18 @@ int main()
 			salesEnd = sales * salesTax;
 			printf("Your item price is: %d USD", salesEnd);
 		}
+		else if (city == 5)
+		{
+			printf("Olympia city tax is 2.9%% which makes the tax .029 \n");
+			cityTax = .029;
+			printf("Please defy the price of the item you purchased: \n");
+			scanf_s("%f", &sales);
+			fseek(stdin, 0, SEEK_END);
+			salesEnd = sales * salesTax;
+			printf("Your item price is: %d USD", salesEnd);
+		}
 
-
-
+		//a^2*b^2=c^2
 
 
 
@@ -95,9 +107,11 @@ int main()
 			}
 		}
 		break;
-	case 2://next equation type
-	{
 
+
+	case 2: 
+	{
+		printf("Welcome to the pythagrean theorem.");
 
 	}
 	}//switchline end
