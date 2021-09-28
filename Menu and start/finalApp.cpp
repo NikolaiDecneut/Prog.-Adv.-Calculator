@@ -10,13 +10,18 @@ int main()
 	// here will be the menu
 	printf("welcome to quick calc!\n");
 	float salesTax = .065;
-	int salesEnd;
+	float salesEnd;
 	float sales;
 	float cityTax;
-	//int pythagTheorom;
 	int equations;
-	//change ints to floats
-	printf("Please select your type of equation\n 1. Sales tax by city\n");
+	float aTwo;
+	float bTwo;
+	float cTwo;
+
+	int pythag;
+	// make loop to revert after bad password
+
+	printf("Please select your type of equation\n 1. Sales tax by city\n 2. Pythagorean theorem\n");
 	scanf_s("%d", &equations);
 	fseek(stdin, 0, SEEK_END);
 	switch (equations)
@@ -24,7 +29,7 @@ int main()
 	case 1:
 		int city;
 		printf("The sales taxs in WA is 6.5%%, but each city has it own taxes so please select your city first\n");
-		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane");
+		printf("1.Duvall\n2.Bellevue\n3.Seattle\n4.Spokane\n5.Olympia\n");
 		scanf_s("%d", &city);
 		fseek(stdin, 0, SEEK_END);
 		printf("%d\n", city);
@@ -37,6 +42,7 @@ int main()
 			fseek(stdin, 0, SEEK_END);
 			salesEnd = sales * salesTax;
 			printf("Your answer is: %d USD", salesEnd);
+			
 		}
 		else if (city == 2)
 		{
@@ -60,10 +66,30 @@ int main()
 		}
 		else if (city == 4)
 		{
-			printf("Spokane city tax is  which makes the tax  \n");
+			printf("Spokane city tax is 9.0%% which makes the tax .09 \n");
+			cityTax = .09;
+			printf("Please defy the price of the item you purchased: \n");
+			scanf_s("%f", &sales);
+			fseek(stdin, 0, SEEK_END);
+			salesEnd = sales * salesTax;
+			printf("Your item price is: %d USD", salesEnd);
+		}
+		else if (city == 5)
+		{
+			printf("Olympia city tax is 2.9%% which makes the tax .029 \n");
+			cityTax = .029;
+			printf("Please defy the price of the item you purchased: \n");
+			scanf_s("%f", &sales);
+			fseek(stdin, 0, SEEK_END);
+			salesEnd = sales * salesTax;
+			printf("Your item price is: %d USD", salesEnd);
 		}
 
+		//a^2*b^2=c^2
 
+
+
+		//admin section
 		else if (city == 4311)
 		{
 			printf("hello, please enter password \n");
@@ -80,11 +106,24 @@ int main()
 			{
 				
 				printf("Incorrect password!");
-				switch (equations = true);
+				(equations = true);
 			}
 		}
 		break;
+
+		
+	case 2: 
+	{
+		printf("Welcome to the pythagrean theorem.\n A^2 * B^2 = C^2\n");
+		printf("For this equation to work i need you to defy two variables, atwo and bTwo\n");
+		printf("defy aTwo then btwo");
+		scanf_s("%f\n", &aTwo);
+		fseek(stdin, 0, SEEK_END);
+		scanf_s("%f\n", &bTwo);
+		fseek(stdin, 0, SEEK_END);
+
 	}
+	}//switchline end
 
 
 
