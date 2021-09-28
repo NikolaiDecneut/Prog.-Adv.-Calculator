@@ -121,7 +121,8 @@ int main()
 		fseek(stdin, 0, SEEK_END);
 		scanf_s("%f\n", &bTwo);
 		fseek(stdin, 0, SEEK_END);
-		cTwo == aTwo ^ 2 + bTwo ^ 2;
+		cTwo == aTwo * aTwo + bTwo * bTwo;
+
 
 	}
 	}//switchline end
