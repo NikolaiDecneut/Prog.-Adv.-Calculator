@@ -114,13 +114,14 @@ int main()
 		
 	case 2: 
 	{
-		printf("Welcome to the pythagrean theorem.\n A^2 * B^2 = C^2\n");
-		printf("For this equation to work i need you to defy two variables, atwo and bTwo\n");
+		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
+		printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
 		printf("defy aTwo then btwo");
 		scanf_s("%f\n", &aTwo);
 		fseek(stdin, 0, SEEK_END);
 		scanf_s("%f\n", &bTwo);
 		fseek(stdin, 0, SEEK_END);
+		cTwo == aTwo ^ 2 + bTwo ^ 2;
 
 	}
 	}//switchline end
