@@ -122,7 +122,7 @@ int main()
 		scanf_s("%f\n", &bTwo);
 		fseek(stdin, 0, SEEK_END);
 		cTwo == aTwo * aTwo + bTwo * bTwo;
-
+		printf() 
 
 	}
 	}//switchline end
