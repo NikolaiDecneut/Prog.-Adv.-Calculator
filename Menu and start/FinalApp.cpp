@@ -18,7 +18,7 @@ int main()
 	float bTwo;
 	float cTwo;
 
-	int pythag;
+	
 	// make loop to revert after bad password
 
 	printf("Please select your type of equation\n 1. Sales tax by city\n 2. Pythagorean theorem\n");
@@ -114,15 +114,26 @@ int main()
 		
 	case 2: 
 	{
+		int pythag;
 		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
-		printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
-		printf("defy aTwo then btwo");
-		scanf_s("%f\n", &aTwo);
-		fseek(stdin, 0, SEEK_END);
-		scanf_s("%f\n", &bTwo);
-		fseek(stdin, 0, SEEK_END);
-		cTwo == aTwo * aTwo + bTwo * bTwo;
-		printf() 
+		printf("If your equation is slightly different select option 2\n");
+
+		if (pythag == 1)
+		{
+			printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
+			printf("defy aTwo then btwo");
+			scanf_s("%f\n", &aTwo);
+			fseek(stdin, 0, SEEK_END);
+			printf("What is your b^2?\n");
+			scanf_s("%f\n", &bTwo);
+			fseek(stdin, 0, SEEK_END);
+			cTwo == aTwo * aTwo + bTwo * bTwo;
+			printf("After math your answer is: %f", &cTwo);
+		}
+		else if (pythag == 2)
+		{
+			printf("hello");
+		}
 
 	}
 	}//switchline end
