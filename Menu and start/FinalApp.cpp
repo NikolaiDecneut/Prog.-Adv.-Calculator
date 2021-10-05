@@ -14,9 +14,9 @@ int main()
 	float sales;
 	float cityTax;
 	int equations;
-	float aTwo;
-	float bTwo;
-	float cTwo;
+	int aTwo;
+	int bTwo;
+	int cTwo;
 
 	
 	// make loop to revert after bad password
@@ -115,24 +115,30 @@ int main()
 	case 2: 
 	{
 		int pythag;
-		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
+		printf("Welcome to the pythagrean theorem.\n A^2 ++ B^2 = C^2\n");
 		printf("If your equation is slightly different select option 2\n");
+		printf("1. regular pythagorean theorem\n2. adjusted pythag theorem\n");
+		scanf_s("%d", &pythag);
+		fseek(stdin, 0, SEEK_END);
+		printf("%d\n", pythag);
 
 		if (pythag == 1)
 		{
 			printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
-			printf("defy aTwo then btwo");
-			scanf_s("%f\n", &aTwo);
-			fseek(stdin, 0, SEEK_END);
+			printf("defy aTwo then btwo\n");
+			scanf_s("%f", &aTwo);
+			//fseek(stdin, 0, SEEK_END);
 			printf("What is your b^2?\n");
-			scanf_s("%f\n", &bTwo);
-			fseek(stdin, 0, SEEK_END);
-			cTwo == aTwo * aTwo + bTwo * bTwo;
-			printf("After math your answer is: %f", &cTwo);
+			scanf_s("%f", &bTwo);
+			//fseek(stdin, 0, SEEK_END);
+		//	printf("A %f", &aTwo);
+
+			cTwo = aTwo * aTwo + bTwo * bTwo;
+			printf("After math your C^2 is: %f", &cTwo);
 		}
 		else if (pythag == 2)
 		{
-			printf("hello");
+			printf("and adjusted form of the equation is bTwo ++ cTwo = aTwo");
 		}
 
 	}
