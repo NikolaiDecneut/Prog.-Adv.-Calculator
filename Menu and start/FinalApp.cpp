@@ -14,9 +14,9 @@ int main()
 	float sales;
 	float cityTax;
 	int equations;
-	int aTwo;
-	int bTwo;
-	int cTwo;
+	float aTwo;
+	float bTwo;
+	float cTwo;
 
 	
 	// make loop to revert after bad password
