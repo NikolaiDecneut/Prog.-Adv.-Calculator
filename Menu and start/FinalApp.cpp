@@ -138,7 +138,8 @@ int main()
 		}
 		else if (pythag == 2)
 		{
-			printf("and adjusted form of the equation is bTwo ++ cTwo = aTwo");
+			printf("An adjusted form of the equation is bTwo ++ cTwo = aTwo");
+			printf("")
 		}
 
 	}
