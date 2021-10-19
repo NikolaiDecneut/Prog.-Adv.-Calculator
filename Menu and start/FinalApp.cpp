@@ -115,7 +115,7 @@ int main()
 	case 2: 
 	{
 		int pythag;
-		printf("Welcome to the pythagrean theorem.\n A^2 ++ B^2 = C^2\n");
+		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
 		printf("If your equation is slightly different select option 2\n");
 		printf("1. regular pythagorean theorem\n2. adjusted pythag theorem\n");
 		scanf_s("%d", &pythag);
@@ -139,12 +139,12 @@ int main()
 		else if (pythag == 2)
 		{
 			printf("An adjusted form of the equation is bTwo ++ cTwo = aTwo");
-			printf("Defy bTwo and cTwo\nbTwo: ");
-			scanf_s("%f", bTwo);
-			printf("\n your cTwo: ");
-			scanf_s("%f\n", cTwo);
+			printf("\nDefy bTwo and cTwo\nbTwo: ");
+			scanf_s("%f", &bTwo);
+			printf("your cTwo: ");
+			scanf_s("%f", &cTwo);
 			aTwo = bTwo * bTwo + cTwo * cTwo;
-			printf("After math your A^2 is: %f", &aTwo);
+			printf("\nAfter math your A^2 is: %f", &aTwo);
 		}
 
 	}
