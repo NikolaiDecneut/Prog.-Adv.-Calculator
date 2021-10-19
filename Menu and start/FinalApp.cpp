@@ -139,7 +139,11 @@ int main()
 		else if (pythag == 2)
 		{
 			printf("An adjusted form of the equation is bTwo ++ cTwo = aTwo");
-			printf("")
+			printf("Defy bTwo and cTwo\nbTwo: ");
+			scanf_s("%f", bTwo);
+			printf("\n your cTwo: ");
+			scanf_s("%f\n", cTwo);
+			aTwo = bTwo * bTwo + cTwo * cTwo;
 		}
 
 	}
