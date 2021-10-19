@@ -144,6 +144,7 @@ int main()
 			printf("\n your cTwo: ");
 			scanf_s("%f\n", cTwo);
 			aTwo = bTwo * bTwo + cTwo * cTwo;
+			printf("After math your A^2 is: %f", &aTwo);
 		}
 
 	}
