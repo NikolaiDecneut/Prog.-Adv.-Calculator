@@ -40,7 +40,7 @@ int main()
 			printf("Please defy the price of the item you purchased\n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your answer is: %d USD", salesEnd);
 			
 		}
@@ -51,7 +51,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your answer is: %d USD", salesEnd);
 		}
 		else if (city == 3)
@@ -61,7 +61,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 		else if (city == 4)
@@ -71,7 +71,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 		else if (city == 5)
@@ -81,7 +81,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 
@@ -133,7 +133,7 @@ int main()
 			//fseek(stdin, 0, SEEK_END);
 		//	printf("A %f", &aTwo);
 
-			cTwo = aTwo * aTwo + bTwo * bTwo;
+			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
 			printf("After math your C^2 is: %f", &cTwo);
 		}
 		else if (pythag == 2)
@@ -143,7 +143,7 @@ int main()
 			scanf_s("%f", &bTwo);
 			printf("your cTwo: ");
 			scanf_s("%f", &cTwo);
-			aTwo = bTwo * bTwo + cTwo * cTwo;
+			aTwo = (bTwo * bTwo) + (cTwo * cTwo);
 			printf("\nAfter math your A^2 is: %f", &aTwo);
 		}
 
