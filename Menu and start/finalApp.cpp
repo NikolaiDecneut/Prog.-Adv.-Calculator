@@ -40,7 +40,7 @@ int main()
 			printf("Please defy the price of the item you purchased\n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your answer is: %d USD", salesEnd);
 			
 		}
@@ -51,7 +51,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your answer is: %d USD", salesEnd);
 		}
 		else if (city == 3)
@@ -61,7 +61,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 		else if (city == 4)
@@ -71,7 +71,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 		else if (city == 5)
@@ -81,7 +81,7 @@ int main()
 			printf("Please defy the price of the item you purchased: \n");
 			scanf_s("%f", &sales);
 			fseek(stdin, 0, SEEK_END);
-			salesEnd = sales * salesTax;
+			salesEnd = (sales * salesTax);
 			printf("Your item price is: %d USD", salesEnd);
 		}
 
@@ -115,7 +115,7 @@ int main()
 	case 2: 
 	{
 		int pythag;
-		printf("Welcome to the pythagrean theorem.\n A^2 ++ B^2 = C^2\n");
+		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
 		printf("If your equation is slightly different select option 2\n");
 		printf("1. regular pythagorean theorem\n2. adjusted pythag theorem\n");
 		scanf_s("%d", &pythag);
@@ -133,12 +133,18 @@ int main()
 			//fseek(stdin, 0, SEEK_END);
 		//	printf("A %f", &aTwo);
 
-			cTwo = aTwo * aTwo + bTwo * bTwo;
+			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
 			printf("After math your C^2 is: %f", &cTwo);
 		}
 		else if (pythag == 2)
 		{
 			printf("An adjusted form of the equation is bTwo ++ cTwo = aTwo");
+			printf("\nDefy bTwo and cTwo\nbTwo: ");
+			scanf_s("%f", &bTwo);
+			printf("your cTwo: ");
+			scanf_s("%f", &cTwo);
+			aTwo = (bTwo * bTwo) + (cTwo * cTwo);
+			printf("\nAfter math your A^2 is: %f", &aTwo);
 		}
 
 	}
