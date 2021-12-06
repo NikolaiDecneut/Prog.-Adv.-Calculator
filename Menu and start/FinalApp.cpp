@@ -115,7 +115,7 @@ int main()
 	case 2: 
 	{
 		int pythag;
-		printf("Welcome to the pythagrean theorem.\n A^2 + B^2 = C^2\n");
+		printf("Welcome to the pythagrean theorem.\n A^2 ++ B^2 = C^2\n");
 		printf("If your equation is slightly different select option 2\n");
 		printf("1. regular pythagorean theorem\n2. adjusted pythag theorem\n");
 		scanf_s("%d", &pythag);
