@@ -132,9 +132,9 @@ int main()
 			printf("What is your b^2?\n");
 			scanf_s("%i", &bTwo);
 			fseek(stdin, 0, SEEK_END);
-
+			
 			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
-			printf("After math your C^2 is: %i", &cTwo);
+			printf("After math your C^2 is: %i", cTwo);
 		}
 	/*	if (pythag == 1)
 		{
