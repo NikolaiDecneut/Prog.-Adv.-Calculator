@@ -128,10 +128,10 @@ int main()
 			printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
 			printf("defy aTwo then btwo\n");
 			scanf_s("%i", &aTwo);
-
+			fseek(stdin, 0, SEEK_END);
 			printf("What is your b^2?\n");
 			scanf_s("%i", &bTwo);
-
+			fseek(stdin, 0, SEEK_END);
 
 			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
 			printf("After math your C^2 is: %i", &cTwo);
