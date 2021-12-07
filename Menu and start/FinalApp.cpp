@@ -14,10 +14,12 @@ int main()
 	float sales;
 	float cityTax;
 	int equations;
-	float aTwo;
-	float bTwo;
-	float cTwo;
-
+	//float aTwo;
+	//float bTwo;
+	//float cTwo;
+	int aTwo;
+	int bTwo;
+	int cTwo;
 	
 	// make loop to revert after bad password
 
@@ -121,8 +123,20 @@ int main()
 		scanf_s("%d", &pythag);
 		fseek(stdin, 0, SEEK_END);
 		printf("%d\n", pythag);
-
 		if (pythag == 1)
+		{
+			printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
+			printf("defy aTwo then btwo\n");
+			scanf_s("%i", &aTwo);
+
+			printf("What is your b^2?\n");
+			scanf_s("%i", &bTwo);
+
+
+			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
+			printf("After math your C^2 is: %i", &cTwo);
+		}
+	/*	if (pythag == 1)
 		{
 			printf("For this equation to work i need you to defy two variables, aTwo and bTwo\n");
 			printf("defy aTwo then btwo\n");
@@ -134,7 +148,7 @@ int main()
 
 			cTwo = (aTwo * aTwo) + (bTwo * bTwo);
 			printf("After math your C^2 is: %f", &cTwo);
-		}
+		}*/
 		else if (pythag == 2)
 		{
 			printf("An adjusted form of the equation is bTwo ++ cTwo = aTwo");
